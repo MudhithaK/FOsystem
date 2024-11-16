@@ -10,12 +10,13 @@ function App() {
     <>
       <div>
         
-      </div>
+      
       <h1>CHECKING LOGIN...</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <form>
+        <lable>User Name </lable>
+        <input type="text" placeholder="Enter Name" name="name" ></input>
+      </form>
+        
        
       </div>
       
