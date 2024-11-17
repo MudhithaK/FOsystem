@@ -11,7 +11,7 @@ mongoose.connect("mongodb://localhost:27017/FOtest1");
 
 app.post('/register',(req,res)=>{
     const {name,password}= req.body;
-    RegiterModel.findOne({name:name})
+    RegiterModel.findOne({name: name})
     .then(user=>{
         if(user){
             res.json("Already exit")
@@ -23,8 +23,9 @@ app.post('/register',(req,res)=>{
     }).catch(err=> res.json(err))
 
 
-})
+});
 
 app.listen(3001,()=> {
     console.log("Server is running");
-})
+   
+});
