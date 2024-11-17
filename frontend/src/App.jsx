@@ -10,9 +10,9 @@ function App() {
   const [password,setPassword]= useState()
   const handleSubmit=(e)=>{
     e.preventDefault();
-    axios.post('',{name,password})
+    axios.post('http://localhost:3001/register',{name,password})
     .then(result=> console.log(result))
-    .catch(err=> console.log(err))
+    .catch(err => console.log(err))
   }
 
   return (
