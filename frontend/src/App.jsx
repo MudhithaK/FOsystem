@@ -4,15 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
 import Signup from './Signup'
+import Login from './Login'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   
   return (
     
-      <div>
-        <Signup/>
-      </div>
-         
+     <BrowserRouter>
+     <Routes>
+      <Route path='/register' element={<Signup/>}></Route>
+      <Route path='/login' element={<Login/>}></Route>
+     </Routes>
+     
+     </BrowserRouter>
       
   )
 }
