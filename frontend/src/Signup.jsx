@@ -12,7 +12,7 @@ function Signup(){
 
     const handleSubmit= (e)=>{
         e.preventDefault()
-        axios.post('',{name,password,email})
+        axios.post('http://localhost:3001/register',{name,password,email})
         .then(result=>console.log(result))
         .catch(err=>console.log(err))
     }
